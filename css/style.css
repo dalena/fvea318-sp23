@@ -1,0 +1,981 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+html {
+    background-image: linear-gradient(180deg, #6a97ffc4 30%, #dfffd0 80%, #FFCFC9 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.35em;
+    line-height: 1.35em;
+    /* background: url("../img/icon.webp"); */
+    background-repeat: no-repeat;
+    background-position: bottom right;
+
+
+}
+
+.wrapper {
+    position: relative;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2 !important;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+}
+
+.container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.block {
+    display: none;
+}
+
+a,
+.button {
+    color: #000;
+    background: #ffec8cde;
+    text-decoration: none;
+
+    /* border-bottom: 1px black solid; */
+    cursor: pointer;
+    transition: all 0.8s ease;
+}
+
+a:hover,
+.button:hover {
+    background: url('../img/hov4.gif');
+    color: #000;
+    border: 1px solid;
+    box-shadow: 5px 5px;
+    cursor: pointer;
+}
+
+h1 a {
+    text-decoration: none;
+}
+
+h2.centFocus {
+    color: #000;
+    text-align: center;
+    /* margin-top: 2em; */
+    transition: all 0.5s ease;
+}
+
+h2.centFocus:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+.headingText {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1em;
+}
+
+.headingText h4 {
+    text-align: center;
+}
+
+.headingText h4:not(:last-child) {
+    padding-right: 2em;
+}
+
+.content {
+    width: 850px;
+    margin: 0 auto;
+}
+
+
+nav {
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+nav li {
+    color: #000;
+    display: inline-block;
+    font-size: 1em;
+    margin-right: 0.5em;
+}
+
+.playlist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    text-transform: uppercase;
+    letter-spacing: .075em;
+}
+
+h1 {
+    text-decoration: none;
+    font-size: 1.5em;
+    line-height: 1.25em;
+    text-align: center;
+}
+
+h2 {
+    /* font-weight: normal; */
+    font-size: 1.25em;
+    margin-top: 0;
+}
+
+/* .centFocus {
+    text-align: center;
+    margin-top: 2em;
+} */
+
+h3 {
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: bold;
+
+}
+
+#syllabus h3,
+table {
+    /* margin-top: 1em;
+    margin-bottom: 0.5em; */
+
+}
+
+
+
+h4 {
+    font-weight: normal;
+    margin: 0;
+}
+
+.dueType {
+    padding: 0 5px;
+    text-shadow: 5px 3px 5px rgba(255, 0, 0, 0.795);
+}
+
+.hiIndiv {
+    background: #ffff82;
+    /* color: #fff; */
+}
+
+.hiFull {
+    background: #ff7fd4a8;
+}
+
+.hiJoint {
+    background: #72ffffa8;
+    box-shadow: 0 0 6px #72fffff8;
+    1
+}
+
+.hiTask {
+    box-shadow: 0 0 6px #6ec5ffa8;
+    background: #6ec5ffa8;
+
+    /* color:red; */
+}
+
+.hiProj {
+    /* background: #9896ff; */
+    background: #79f867a8;
+    box-shadow: 0 0 6px #79f867a8;
+    ;
+    /* color: #fff; */
+}
+
+.hiChal {
+    background: #ff7fd4a8;
+}
+
+h4.hiChal {
+    text-align: center;
+}
+
+.hiExtend {
+    /* background: #9896ff; */
+    background: #a1ffffa8;
+
+}
+
+
+.hiNoClass {
+    background: #ff000069;
+
+}
+
+
+nav ul {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.toggle h4 {
+    /* font-weight: bold; */
+}
+
+
+p {
+    /* padding: 0; */
+    margin: 0;
+    /* margin-bottom: 1em; */
+}
+
+section {
+    padding-bottom: 2em
+}
+
+.imgExBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgEx {
+    width: 100%;
+    /*or whatever you choose*/
+    margin: 0;
+    text-align: center;
+}
+
+.imgEx img {
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    /*actual image width*/
+    height: auto;
+    /* maintain aspect ratio*/
+    margin: auto;
+    /*optional centering of image*/
+}
+
+h5.sWorks {
+    text-align: center;
+}
+
+#assignments img,
+#assignments video {
+    max-width: 500px;
+}
+
+#schedule h3,
+#projects h3,
+#exercises h3 {
+    /* padding: .3em; */
+    /* margin: 0.5em 0; */
+    display: block;
+    clear: both;
+}
+
+.schedInner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em 1em 3em 1em;
+    /* max-width:900px; */
+    border-bottom: 5px solid #ab44ff41;
+}
+
+.schedBox {
+    min-width: 50%;
+    padding: 0 0 0 15px;
+}
+
+.schedStat {
+    font-weight: bold;
+}
+
+#schedule a {
+    background: transparent;
+    border-bottom: 2px solid #610ee667;
+    /* background: #e9ffac81; */
+    transition: all 0.5s ease;
+}
+
+#schedule a:hover {
+    color: #000;
+    background: #ca44ff85;
+    border: 1px solid;
+    box-shadow: 2px 2px;
+}
+
+#schedule h5 {
+    font-size: 1em;
+    margin: 0;
+    line-height: 2em;
+}
+
+#projects ul {
+    margin-top: 0;
+}
+
+#schedule ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#schedule li {
+    line-height: 1.4em;
+}
+
+img {
+    max-width: 100%;
+}
+
+li img {
+    margin: 0.5em 0;
+}
+
+table {
+    width: 100%;
+}
+
+tr>td.opFinish {
+    opacity: 50%;
+    /* background: #6b06745d; */
+}
+
+tr {
+    vertical-align: top;
+}
+
+.grading td:nth-child(1) {
+    width: 2%;
+    font-weight: bold;
+}
+
+.grading td:nth-child(2) {
+    width: 7%;
+    text-align: center;
+}
+
+.grading td {
+    width: 70%;
+    word-break: break-all;
+
+}
+
+.sched div {
+    box-sizing: border-box;
+}
+
+.sched .table-container {
+    display: block;
+    border-top: solid 1px #000000;
+    /* margin: 2em auto;
+    width: 90%;
+    max-width: 600px; */
+}
+
+.sched .flag-icon {
+    margin-right: 0.1em;
+}
+
+.sched .flex-table {
+    display: flex;
+    flex-flow: row wrap;
+    border-left: solid 1px #000000;
+    transition: 0.5s;
+    align-items: stretch;
+}
+
+.sched .flex-table:first-of-type {
+    background: #b59fff98;
+}
+
+.sched flex-table:first-of-type .flex-row {
+    background: #1976D2;
+    color: white;
+    border-color: #1565C0;
+}
+
+.sched .flex-table.row:nth-child(odd) .flex-row {
+    background: #d0d7ff9b;
+}
+.sched .flex-table.row:nth-child(even) .flex-row {
+    background: #a59dffbd;
+}
+
+.sched .flex-table:hover {
+    background: #F5F5F5;
+    transition: 500ms;
+}
+
+.sched .flex-row {
+    width: calc(100% / 4);
+    text-align: center;
+    padding: 0.5em 0.5em;
+    border-right: solid 1px #000000;
+    border-bottom: solid 1px #000000;
+}
+
+.sched .rowspan {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.sched .column {
+    display: flex;
+    flex-flow: column wrap;
+    width: 75%;
+    padding: 0;
+}
+
+.sched .column .flex-row {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    padding: 0;
+    border: 0;
+}
+
+.sched .column .flex-row:hover {
+    background: #F5F5F5;
+    transition: 500ms;
+}
+
+.sched .flex-cell {
+    width: calc(100% / 3);
+    text-align: center;
+    padding: 0.5em 0.5em;
+}
+
+@media all and (max-width: 767px) {
+    .sched .flex-row {
+        width: calc(100% / 3);
+    }
+
+    .sched .flex-row.first {
+        width: 100%;
+    }
+
+    .sched .column {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 430px) {
+    .sched .flex-table .flex-row {
+        border-bottom: 0;
+    }
+
+    .sched .flex-table .flex-row:last-of-type {
+    }
+
+    .sched .header .flex-row {
+        border-bottom: solid 1px;
+    }
+
+    .sched .flex-row {
+        width: 100%;
+    }
+
+    .sched .flex-row.first {
+        width: 100%;
+    }
+
+    .sched .column {
+        width: 100%;
+    }
+
+    .sched .column .flex-row {
+    }
+
+    .sched .flex-cell {
+        width: 100%;
+    }
+}
+
+
+#schedule .tg td {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    font-family: Arial, sans-serif;
+    font-size: .75em;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+}
+
+#schedule .tg th {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+    background: #610ee667;
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+.tbOver {
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+.tg-0lax {
+    background: #ffffffa1;
+}
+
+.tbFund {
+    background: #ff00ff1a;
+}
+
+.tbWild {
+    background: #00ffff1a;
+}
+
+.tbDir {
+    background: #ff00ff1a;
+}
+
+.tbFin {
+    background: #00ffff1a;
+}
+
+#schedule>h4 {
+    margin: 0 auto;
+    line-height: 25px;
+    font-weight: bold;
+}
+
+.meetType {
+    margin: 18px auto;
+
+}
+
+#schedule>ul,
+#schedule>li {
+    line-height: 20px;
+    font-size: 16px;
+    margin: 0 auto;
+    line-height: 25px;
+
+}
+
+ol li {
+    margin-bottom: 1em;
+}
+
+#meetings {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+#meetings tr:nth-child(1) {
+    text-decoration: underline;
+}
+
+#meetings td:nth-child(1) {
+    font-weight: normal;
+}
+
+#meetings td:nth-child(2) {
+    min-width: 6em;
+}
+
+.spacer {
+    height: 1em;
+}
+
+.weekspacer {
+    height: 3em;
+}
+
+
+#projects div {
+    width: 100%;
+    float: left;
+    margin-bottom: 1em;
+}
+
+h4 {
+    font-weight: bold;
+}
+
+
+.label {
+    font-weight: bold;
+}
+
+
+pre {
+    line-height: 1.45em;
+}
+
+#bird-cnv {
+    position: fixed;
+    top: 50px;
+    right: 50px;
+}
+
+#updated {
+    width: 100%;
+    text-align: right;
+    color: #5f5f5f;
+    position: relative;
+    right: -1.5em;
+    bottom: -1.5em;
+}
+
+.toggle {
+    /* transition: height 0.5s ease; */
+    margin-left: 1em;
+    border-left: 2px solid rgb(255, 255, 255);
+    padding-left: 1em;
+}
+
+
+.toggles {
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    background: #ffb52a42;
+    /* display: inline-block; */
+}
+
+.toggles:hover {
+    background: #c478da9b;
+    /* border-bottom: 1.75px solid #f3b328; */
+    /* color: #fff; */
+
+}
+
+.headLink {
+    border: none;
+}
+
+.headLink:hover {
+    border: none;
+}
+
+.parWrap {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: fixed;
+    /* width: 100%; */
+    /* height: 100%; */
+
+}
+
+.finProject {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid {
+    display: flex;
+    flex-flow: row wrap;
+    padding-top: 2em;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.grid>div {
+    flex: auto;
+    height: 400px;
+    min-width: 200px;
+
+}
+
+.sWorksPrint {
+    display: none;
+}
+
+.grid>div img {
+    max-height: 300px;
+
+}
+
+
+@media screen and (max-width: 800px) {
+    body {
+        padding: 1em;
+        /* font-size: 1.1em; */
+    }
+
+    h1 {
+        font-size: 1.5em;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    .centFocus {
+        margin-top: 0px;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    #projects h3,
+    #schedule h3,
+    #assignments h3 {
+        font-size: 1em;
+    }
+
+    h4 {
+        /* font-size: .75em; */
+    }
+
+
+    #links {
+        text-align: center;
+        padding: 0px;
+        /* width: 95%; */
+
+    }
+
+    nav {
+        width: 100%;
+        left: 0;
+        margin-top: 2em;
+        margin-bottom: 3em;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    ul {
+        padding-inline-start: 20px;
+        margin-block-end: 0em;
+
+
+    }
+
+    .headingText {
+        display: initial;
+        text-align: center;
+    }
+
+    .headingText h4:not(:last-child) {
+        padding: 0px;
+    }
+
+    .weekBox {
+        flex-direction: column;
+
+    }
+
+    .content {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+
+    .parallax {
+        display: none;
+    }
+
+    .schedInner {
+        display: flex;
+        flex-direction: column;
+        padding-left: 2em;
+    }
+
+    .schedBox {
+        margin-bottom: 1em;
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 1110px) {
+    #bird-cnv {
+        display: none;
+    }
+
+    .content {
+        width: 100%;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    .parWrap {
+        width: 100%;
+    }
+
+    body {
+        background: none;
+    }
+
+
+
+}
+
+@media screen and (max-width: 1600px) {
+
+    .final {
+        display: inline-block;
+    }
+
+    .parallax4 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1900px) {
+    .parallax2 {
+        left: 15vw;
+        top: 25vh;
+        width: 400px;
+        height: 600px;
+
+    }
+
+    .parallax3 {
+        left: 5vw;
+        top: 35vh;
+        width: 350px;
+        height: 500px;
+    }
+
+    .parallax4 {
+        left: 10vw;
+        top: 30vh;
+    }
+}
+
+.print {
+    display: none;
+}
+
+@media print {
+    html {
+        background: #aec8ffc4;
+        background-attachment:initial;
+        width: 100%;
+        height: 100%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    body {
+        font-size: 1em;
+        line-height: 1.2em;
+        /* background: red; */
+        padding-bottom: 50px;
+
+    }
+
+    .content {
+        width: 650px;
+
+    }
+
+    .iconLogo img{
+        width: 90px;
+        padding-top: 20px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        line-height: 1.2em;
+    }
+
+    h2.centFocus {
+        margin-top: 0;
+        margin-bottom: 1em;
+    }
+
+    .toggle {
+        display: block !important;
+
+    }
+
+    .toggle img {
+        max-width: 400px;
+        text-align: center;
+    }
+
+    .headingText {
+        justify-content: center;
+    }
+
+    .noPrint {
+        display: none;
+    }
+
+    .sWorksPrint {
+        display: block;
+        text-align: center;
+    }
+
+    tr>td.opFinish {
+        opacity: 1;
+        background: none;
+    }
+
+    #schedule .tg td {
+        border: solid #000000 .5px;
+        font-size: 13px;
+    }
+
+    #schedule .tg th {
+        border: solid #000000 .5px;
+    }
+
+    .print {
+        display: inline-block;
+        padding-bottom: .1em;
+        /* border-bottom: 1px solid black; */
+    }
+
+    #assignments img, #assignments video {
+        max-width: 300px;
+    }
+
+}
