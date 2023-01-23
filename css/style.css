@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
 html {
-    background-image: linear-gradient(180deg, #6a97ffc4 30%, #dfffd0 80%, #FFCFC9 100%);
+    background-image: linear-gradient(-190deg, #6a97ffc4 20%, #dfffd0 60%, #FFCFC9 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
     width: 100%;
