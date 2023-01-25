@@ -765,6 +765,7 @@ pre {
     h4 {
         /* font-size: .75em; */
     }
+    
 
 
     #links {
@@ -849,7 +850,9 @@ pre {
     body {
         background: none;
     }
-
+    #assignments img, #assignments video {
+        max-width: 100%;
+    }    
 
 
 }
